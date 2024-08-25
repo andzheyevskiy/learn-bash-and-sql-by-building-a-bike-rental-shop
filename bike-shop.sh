@@ -47,7 +47,6 @@ if [[ -z $AVAILABLE_BIKES ]]; then
   else
   #get bike availability
   BIKE_AVAILABILITY=$($PSQL "SELECT available FROM bikes WHERE bike_id=$BIKE_ID_TO_RENT AND available=true")
-  echo $BIKE_AVAILABILITY
   #if not available
     if [[ -z $BIKE_AVAILABILITY ]]; then
     #send to main menu
