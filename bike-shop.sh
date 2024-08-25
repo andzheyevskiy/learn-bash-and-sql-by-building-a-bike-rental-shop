@@ -72,6 +72,7 @@ INSERT_RENTAL_RESULT=$($PSQL "INSERT INTO rentals(customer_id,bike_id) VALUES($C
 SET_TO_FALSE_RESULT=$($PSQL "UPDATE bikes SET available=false WHERE bike_id=$BIKE_ID_TO_RENT")
     # get bike info
 BIKE_INFO=$($PSQL "SELECT size, type FROM bikes WHERE bike_id=$BIKE_ID_TO_RENT")
+echo $BIKE_INFO
     # send to main menu
 
     fi
