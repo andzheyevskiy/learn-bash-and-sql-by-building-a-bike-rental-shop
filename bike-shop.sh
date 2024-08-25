@@ -96,6 +96,7 @@ RETURN_MENU() {
   #if no rentals
     if [[ -z $CUSTOMER_RENTALS ]]; then
   #send to main menu
+    MAIN_MENU "You do not have any bikes rented."
     fi
   fi
 }
