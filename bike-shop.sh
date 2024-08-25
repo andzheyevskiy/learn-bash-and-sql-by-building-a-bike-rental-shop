@@ -69,7 +69,7 @@ CUSTOMER_ID=$($PSQL "SELECT customer_id FROM customers WHERE phone='$PHONE_NUMBE
     # insert bike rental
 INSERT_RENTAL_RESULT=$($PSQL "INSERT INTO rentals(customer_id,bike_id) VALUES($CUSTOMER_ID,$BIKE_ID_TO_RENT)")
     # set bike availability to false
-
+SET_TO_FALSE_RESULT=$($PSQL "UPDATE bikes SET available=false WHERE bike_id=$BIKE_ID_TO_RENT")
     # get bike info
 
     # send to main menu
