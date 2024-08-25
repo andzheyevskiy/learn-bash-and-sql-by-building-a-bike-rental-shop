@@ -164,3 +164,6 @@ psql -U freecodecamp -d postgres
 [[ 1 =~ ^[0-9]$ ]]
 [[ 11 =~ ^[0-9]$ ]]
 [[ 11 =~ ^[0-9]+$ ]]
+__vsc_prompt_cmd_original
+[[ 11 != ^[0-9]+$ ]]
+[[ ! 11 =~ ^[0-9]+$ ]]
