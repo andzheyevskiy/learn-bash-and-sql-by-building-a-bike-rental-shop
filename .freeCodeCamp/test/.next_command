@@ -167,3 +167,9 @@ psql -U freecodecamp -d postgres
 __vsc_prompt_cmd_original
 [[ 11 != ^[0-9]+$ ]]
 [[ ! 11 =~ ^[0-9]+$ ]]
+[[ -n true ]]
+[[ -n false ]]
+[[ -n 1=1 ]]
+[[ -n 1=0 ]]
+[[ 1 = 0 ]]
+[[ 1 = 1 ]]
