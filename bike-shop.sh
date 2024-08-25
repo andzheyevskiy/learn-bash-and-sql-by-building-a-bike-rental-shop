@@ -54,6 +54,7 @@ if [[ -z $AVAILABLE_BIKES ]]; then
     else
     #get customer info
     echo -e "\nWhat's your phone number?"
+    read PHONE_NUMBER
     #if customer doesn't exist
     #get new customer name
     #insert new customer
