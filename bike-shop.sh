@@ -43,6 +43,7 @@ read BIKE_ID_TO_RENT
     #if input is not a number
 if [[ ! $BIKE_ID_TO_RENT =~ ^[0-9]+$ ]]; then
     #send to main menu
+    MAIN_MENU "That is not a valid bike number."
 fi
 fi
 }
