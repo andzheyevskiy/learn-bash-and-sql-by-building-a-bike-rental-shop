@@ -159,3 +159,4 @@ psql -U freecodecamp -d postgres
 [[ -n a=~[0-9] ]]
 [[ -n a=~[0-9] ]]
 [[ a =~ [0-9] ]]
+[[ a1 =~ [0-9] ]]
