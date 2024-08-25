@@ -153,3 +153,4 @@ psql -U freecodecamp -d postgres
 ./bike-shop.sh
 ./bike-shop.sh
 ./bike-shop.sh
+./bike-shop.sh
