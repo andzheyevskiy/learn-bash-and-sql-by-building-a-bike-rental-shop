@@ -32,19 +32,23 @@ if [[ -z $AVAILABLE_BIKES ]]; then
   MAIN_MENU "Sorry, we don't have any bikes available right now."
   else
     #display available bikes
-echo -e "\nHere are the bikes we have available:"
-echo "$AVAILABLE_BIKES" | while read BIKE_ID BAR TYPE BAR SIZE
-do
-  echo "$BIKE_ID) $SIZE\" $TYPE Bike"
-done
-    #ask for bike to rent
-echo -e "\nWhich one would you like to rent?"
-read BIKE_ID_TO_RENT
-    #if input is not a number
-if [[ ! $BIKE_ID_TO_RENT =~ ^[0-9]+$ ]]; then
-    #send to main menu
-    MAIN_MENU "That is not a valid bike number."
-fi
+  echo -e "\nHere are the bikes we have available:"
+  echo "$AVAILABLE_BIKES" | while read BIKE_ID BAR TYPE BAR SIZE
+  do
+    echo "$BIKE_ID) $SIZE\" $TYPE Bike"
+  done
+      #ask for bike to rent
+  echo -e "\nWhich one would you like to rent?"
+  read BIKE_ID_TO_RENT
+      #if input is not a number
+  if [[ ! $BIKE_ID_TO_RENT =~ ^[0-9]+$ ]]; then
+      #send to main menu
+      MAIN_MENU "That is not a valid bike number."
+  else
+  #get bike availability
+  #if not available
+  #send to main menu
+  fi
 fi
 }
 
