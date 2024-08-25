@@ -156,3 +156,6 @@ psql -U freecodecamp -d postgres
 ./bike-shop.sh
 ./bike-shop.sh
 ./bike-shop.sh
+[[ -n a=~[0-9] ]]
+[[ -n a=~[0-9] ]]
+[[ a =~ [0-9] ]]
