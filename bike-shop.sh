@@ -81,7 +81,7 @@ fi
 }
 
 RETURN_MENU() {
-  echo "Return Menu"
+  
 }
 
 EXIT() {
