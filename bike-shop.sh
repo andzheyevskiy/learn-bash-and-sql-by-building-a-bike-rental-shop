@@ -67,7 +67,7 @@ if [[ -z $AVAILABLE_BIKES ]]; then
     # get customer_id
 CUSTOMER_ID=$($PSQL "SELECT customer_id FROM customers WHERE phone='$PHONE_NUMBER'")
     # insert bike rental
-
+INSERT_RENTAL_RESULT=$($PSQL "INSERT INTO rentals(customer_id,bike_id) VALUES($CUSTOMER_ID,$BIKE_ID_TO_RENT)")
     # set bike availability to false
 
     # get bike info
