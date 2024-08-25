@@ -57,13 +57,14 @@ if [[ -z $AVAILABLE_BIKES ]]; then
     read PHONE_NUMBER
     CUSTOMER_NAME=$($PSQL "SELECT name FROM customers WHERE phone='$PHONE_NUMBER'")
     #if customer doesn't exist
-    if [[ -z $CUSTOMER_NAME ]]; then
-    #get new customer name
-    echo -e "\nWhat's your name?"
-    read CUSTOMER_NAME
-    #insert new customer
-    INSERT_CUSTOMER_RESULT=$($PSQL "INSERT INTO customers(name,phone) VALUES('$CUSTOMER_NAME','$PHONE_NUMBER')")
-    fi
+      if [[ -z $CUSTOMER_NAME ]]; then
+      #get new customer name
+      echo -e "\nWhat's your name?"
+      read CUSTOMER_NAME
+      #insert new customer
+      INSERT_CUSTOMER_RESULT=$($PSQL "INSERT INTO customers(name,phone) VALUES('$CUSTOMER_NAME','$PHONE_NUMBER')")
+      
+      fi
     fi
   fi
 fi
