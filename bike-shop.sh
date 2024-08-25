@@ -88,6 +88,7 @@ RETURN_MENU() {
   #if not found
   if [[ -z $CUSTOMER_ID ]]; then
   #send to main menu
+    MAIN_MENU "I could not find a record for that phone number."
   fi
 }
 
